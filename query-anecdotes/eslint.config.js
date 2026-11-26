@@ -17,5 +17,17 @@ export default defineConfig([
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
+    rules: {
+      // NotificationContext.jsx exporta el proveedor y sus hooks juntos (ejercicio 6.22)
+      'react-refresh/only-export-components': [
+        'error',
+        { allowExportNames: ['useNotify', 'useNotificationValue'] },
+      ],
+    },
+  },
+  {
+    // el servidor de pruebas se ejecuta con Node, no en el navegador
+    files: ['server.js'],
+    languageOptions: { globals: globals.node },
   },
 ])
