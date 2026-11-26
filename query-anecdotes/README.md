@@ -1,16 +1,13 @@
-# React + Vite
+# query-anecdotes (ejercicios 6.16 a 6.22)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Anécdotas con TanStack Query:
 
-Currently, two official plugins are available:
+- `useQuery` para cargar las anécdotas, con un mensaje si el servidor no responde.
+- Mutaciones para crear y votar que actualizan la caché sin volver a pedir la lista.
+- Avisos con `useReducer` y Context (`src/NotificationContext.jsx`), también para los errores del servidor (por ejemplo, una anécdota demasiado corta).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run server
+npm run dev
+```
