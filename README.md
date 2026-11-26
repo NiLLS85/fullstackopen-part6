@@ -10,3 +10,7 @@ Parte del repositorio de ejercicios del curso ([fs-statemanagement](https://gith
 | [anecdotes](anecdotes) | 6.2 a 6.15 | Anécdotas con Zustand: votos, filtro, avisos temporales, servidor json-server y pruebas del almacén con Vitest |
 | [query-anecdotes](query-anecdotes) | 6.16 a 6.22 | Anécdotas con TanStack Query y avisos con `useReducer` y Context |
 | unicafe-tests, anecdotes-tests y query-anecdotes-tests | | Pruebas del curso (Playwright) |
+
+## Uso de IA
+
+Estos ejercicios se hicieron con ayuda de un asistente de IA (Claude, de Anthropic), bajo mi dirección. El asistente escribió la mayor parte del código y lo comprobó con las pruebas del curso.
